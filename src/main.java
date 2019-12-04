@@ -3,19 +3,19 @@ import java.util.*;
 
 public class main {
     public static void main(String[] args) {
-        ListNode head = new ListNode(0);
-        ListNode a1 = new ListNode(1);
-        ListNode a2 = new ListNode(1);
-        ListNode a3 = new ListNode(2);
-        ListNode a4 = new ListNode(2);
-        ListNode a5 = new ListNode(3);
+        ListNode head = new ListNode(1);
+        ListNode a1 = new ListNode(2);
+        ListNode a2 = new ListNode(3);
+        ListNode a3 = new ListNode(4);
+        ListNode a4 = new ListNode(5);
+        ListNode a5 = new ListNode(6);
 
         head.next = a1;
         a1.next = a2;
         a2.next = a3;
         a3.next = a4;
         a4.next = a5;
-        ListNode node = deleteDuplicatespull(head);
+        ListNode node = swapPairs(head);
         while (true) {
             if (node == null) {
                 break;
@@ -788,21 +788,57 @@ public class main {
             } else {
                 while (true) {
                     if (head.val == next.val) {
-                        next = next.next;
+                        if (next.next != null) {
+                            next = next.next;
+                        } else {
+                            next = next.next;
+                            break;
+                        }
                     } else {
                         break;
                     }
                 }
                 if (head.next != next) {
                     head = next;
-                    next = next.next;
+                    if (next != null) {
+                        next = next.next;
+                    }
                 }
             }
-            if (head.next == null) {
-                yidong.next = new ListNode(head.val);
+            if (head == null || head.next == null) {
+                if (head == null) {
+                    yidong.next = null;
+                } else {
+                    yidong.next = new ListNode(head.val);
+                }
                 break;
             }
         }
         return result.next;
+    }
+
+    public static ListNode swapPairs(ListNode head) {
+        ListNode resulet = head.next;
+        ListNode next = head.next;
+
+        head.next = next.next;
+        next.next = head;
+        ListNode a;
+        a = head;
+        head = next;
+        next = a;
+
+        while (true) {
+            if (next.next.next != null) {
+                head = head.next.next;
+                next = next.next.next;
+            } else {
+                break;
+            }
+            if (next.next == null) {
+                break;
+            }
+        }
+        return resulet;
     }
 }
