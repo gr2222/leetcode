@@ -1,0 +1,18 @@
+
+d
+java:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(–¯­
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S11480"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>
+java:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+h
+java:S2259"MA "NullPointerException" could be thrown; "fileInputStream" is nullable here.(Â³û»ıÿÿÿÿ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ëàáŒ
+\	java:S899"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ

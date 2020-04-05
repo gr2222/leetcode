@@ -3,29 +3,10 @@ import java.util.*;
 
 public class main {
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        ListNode a1 = new ListNode(2);
-        ListNode a2 = new ListNode(3);
-        ListNode a3 = new ListNode(4);
-        ListNode a4 = new ListNode(5);
-        ListNode a5 = new ListNode(6);
-
-        head.next = a1;
-        a1.next = a2;
-        a2.next = a3;
-        a3.next = a4;
-        a4.next = a5;
-        ListNode node = swapPairs(head);
-        while (true) {
-            if (node == null) {
-                break;
-            }
-            System.out.println(node.val);
-            node = node.next;
-
-        }
+        int[] a = {9,6,4,2,3,5,7,0,1};
+        int i = missingNumber(a);
     }
-
+    private static int suns;
     public static boolean isPalindrome(int x) {
         String s = String.valueOf(x);
         char[] chars = s.toCharArray();
@@ -818,27 +799,219 @@ public class main {
     }
 
     public static ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
         ListNode resulet = head.next;
         ListNode next = head.next;
-
-        head.next = next.next;
-        next.next = head;
-        ListNode a;
-        a = head;
-        head = next;
-        next = a;
+        ListNode b = null;
 
         while (true) {
-            if (next.next.next != null) {
+            head.next = next.next;
+            next.next = head;
+            ListNode a;
+            a = head;
+            head = next;
+            next = a;
+            if (b != null) {
+                b.next = head;
+            }
+            b = next;
+
+            if (next.next != null && next.next.next != null) {
                 head = head.next.next;
                 next = next.next.next;
             } else {
                 break;
             }
-            if (next.next == null) {
-                break;
-            }
         }
         return resulet;
     }
+
+    public static int maxProfit(int[] prices) {
+        if (prices.length <= 1) {
+            return 0;
+        }
+        int mix = prices[0];
+        int max = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (mix > prices[i]) {
+                mix = prices[i];
+            }
+            if (prices[i] - mix > max) {
+                max = prices[i] - mix;
+            }
+        }
+        return max;
+    }
+
+    public static int maxProfitpro(int[] prices) {
+        if (prices.length <= 1) {
+            return 0;
+        }
+        int max = 0;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i - 1] < prices[i]) {
+                max = max + (prices[i] - prices[i - 1]);
+
+            }
+        }
+        return max;
+    }
+
+    public static int maxProfitpro1(int[] prices) {
+
+        return 0;
+    }
+
+    public static List<List<Integer>> leetcode_15(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (nums.length <= 2) {
+            return result;
+        }
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+            set.add(nums[i]);
+        }
+//        set;
+        Arrays.sort(nums);
+        if (nums[0] == nums[nums.length - 1]) {
+            if (nums[0] == 0) {
+                List<Integer> a = new ArrayList<>();
+                a.add(0);
+                a.add(0);
+                a.add(0);
+                result.add(a);
+                return result;
+            } else {
+                return result;
+            }
+        }
+        int k = 0;
+        int i = 1;
+        int j = nums.length - 1;
+
+        return result;
+    }
+
+    public static boolean searchMatrix(int[][] matrix, int target) {
+        int i1 = 0;
+        int j1 = 0;
+        if (matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+        for (int i = 0; i < matrix.length; i++) {
+            if (matrix[i][0] < target) {
+                i1 = i;
+            }
+        }
+
+        for (int i = 0; i < matrix[0].length; i++) {
+            if (matrix[0][i] > target) {
+                j1 = i;
+                break;
+            }
+        }
+        for (int i = 0; i < i1; i++) {
+            for (int j = 0; j < j1; j++) {
+                if (matrix[i][j] == target) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static int atMostNGivenDigitSet(String[] D, int N) {
+        String s = String.valueOf(N);
+        int length = s.length();
+        int result = 0;
+        String a = "1";
+        for (int i = 1; i < length; i++) {
+            result = result + (int) Math.pow(D.length, i);
+            a = a + 0;
+        }
+        Integer N_1 = Integer.valueOf(a);
+        char[] chars = s.toCharArray();
+        System.out.println(N_1);
+
+        return result;
+    }
+
+    public static String strWithout3a3b(int A, int B) {
+        if (A > B && A - B > 3) {
+            return null;
+        }
+        if (A < B && B - A > 3) {
+            return null;
+        }
+        return null;
+    }
+
+    public static int[] distributeCandies(int candies, int num_people) {
+        int[] peopleList = new int[num_people];
+        int i = 0;
+        int candiesnum = 1;
+        while (true) {
+            if (candies >= candiesnum) {
+                peopleList[i] = peopleList[i] + candiesnum;
+                candies = candies - candiesnum;
+            } else {
+                peopleList[i] = peopleList[i] + candies;
+                break;
+            }
+            if (i >= peopleList.length - 1) {
+                i = -1;
+            }
+            i++;
+            candiesnum++;
+        }
+        return peopleList;
+    }
+
+    public static String[] uncommonFromSentences(String A, String B) {
+        String[] s = A.split(" ");
+        String[] s1 = B.split(" ");
+        int strLen1 = s.length;
+        int strLen2 = s1.length;
+        s = Arrays.copyOf(s, strLen1 + strLen2);
+        System.arraycopy(s1, 0, s, strLen1, strLen2);
+        String a = "";
+        for (int i = 0; i < s.length; i++) {
+            a = s[i];
+            if (s[i].equals(" *")) {
+                continue;
+            }
+            for (int j = i + 1; j < s.length; j++) {
+                if (a.equals(s[j])) {
+                    s[j] = " *";
+                    s[i] = " *";
+                }
+            }
+
+        }
+        ArrayList<String> arrayList = new ArrayList<>();
+        for (int i = 0; i < s.length; i++) {
+            if (!s[i].equals(" *")) {
+                arrayList.add(s[i]);
+            }
+        }
+        String[] strings = arrayList.toArray(new String[arrayList.size()]);
+        return strings;
+    }
+
+    public static int missingNumber(int[] nums) {
+        int sun = 0;
+        for (int i = 0; i <= nums.length; i++) {
+            sun = sun+i;
+        }
+        int suns = 0;
+        for (int i = 0; i < nums.length; i++) {
+            suns = suns + nums[i];
+        }
+        return sun - suns;
+    }
+
+
+
 }

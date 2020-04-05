@@ -1,0 +1,202 @@
+
+‡
+java:S1319…"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(©·Äë
+†
+java:S1319"oThe type of the "lsit" object should be an interface such as "List" rather than the implementation "ArrayList".( „€
+v
+java:S4165÷"_Remove this useless assignment; "i" already holds the assigned value along all execution paths.(£¢Ï–
+P
+java:S3516Û"9Refactor this method to not always return the same value.(÷ğ
+U
+java:S3516­"9Refactor this method to not always return the same value.(«×ü£şÿÿÿÿ
+>
+java:S2189Ú""Correct this loop's end condition.(Îí¨×úÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
+2
+java:S1643"Use a StringBuilder instead.(Ššóë
+7
+java:S1643q"Use a StringBuilder instead.(ìû…ïÿÿÿÿÿ
+8
+java:S1643¤"Use a StringBuilder instead.(ÏüœËøÿÿÿÿ
+t	java:S135ç"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+t	java:S135õ"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+t	java:S135‚"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+T
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ËÁü
+U
+java:S1155‰">Use isEmpty() to check whether the collection is empty or not.(ËÁü
+l	java:S117Ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çû³Ùşÿÿÿÿ
+l	java:S117Ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òõ ›üÿÿÿÿ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìğú
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìğú
+l	java:S117¦"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È±¾Æıÿÿÿÿ
+l	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«×ü£şÿÿÿÿ
+l	java:S117­"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«×ü£şÿÿÿÿ
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™®Û
+f	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹˜ß\
+f	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹˜ß\
+L
+java:S1143ò"5Remove this return statement from this finally block.(È¸å
+\
+java:S2259Ï"@A "NullPointerException" could be thrown; "l1" is nullable here.(áÜë¨üÿÿÿÿ
+W
+java:S2259Ó"@A "NullPointerException" could be thrown; "l2" is nullable here.(Çı¾ñ
+0
+java:S1220""Move this file to a named package.
+U
+java:S4973Ü"9Use the "equals" method if value comparison was intended.(ÃŠĞÅûÿÿÿÿ
+b
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘
+v
+java:S1488ç"_Immediately return this expression instead of assigning it to the temporary variable "strings".(¿Øú£
+J
+java:S1121Ô".Extract the assignment out of this expression.(€€ı·ûÿÿÿÿ
+J
+java:S1121Ô".Extract the assignment out of this expression.(€€ı·ûÿÿÿÿ
+J
+java:S1121Ô".Extract the assignment out of this expression.(€€ı·ûÿÿÿÿ
+q
+java:S4144·"ZUpdate this method so that its implementation is not identical to "JumpFloor" on line 518.(ú€å
+k
+java:S1149}"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ
+v
+java:S1149÷"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÿô£Ê
+K
+java:S1854"5Remove this useless assignment to local variable "i".(¬†°–
+m
+java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¨Ü±•üÿÿÿÿ
+<	java:S131(""Add a default case to this switch.(Ó×ßÀşÿÿÿÿ
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(í Âõøÿÿÿÿ
+m
+java:S3776O"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(µùç‘şÿÿÿÿ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(õšÌú
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(ŞªìÈÿÿÿÿÿ
+X
+java:S1126‰"AReplace this if-then-else statement by a single return statement.(ËÁü
+P
+java:S1854‘"9Remove this useless assignment to local variable "chars".(«òç¯
+R
+java:S1854¿";Remove this useless assignment to local variable "integer".(áÈ³º
+p
+java:S2293›"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢ÿåİ
+h
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(É½Şß
+O	java:S106"9Replace this use of System.out or System.err by a logger.(É½Şß
+m
+java:S3457¤"Q%n should be used in place of \n to produce the platform-specific line separator.(¯–µ‚üÿÿÿÿ
+T	java:S106¤"9Replace this use of System.out or System.err by a logger.(¯–µ‚üÿÿÿÿ
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(£¶µÿÿÿÿÿ
+O	java:S106©"9Replace this use of System.out or System.err by a logger.(™Õ¼Ú
+O	java:S106¬"9Replace this use of System.out or System.err by a logger.(‘ÓÆŞ
+T	java:S106®"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+O	java:S106±"9Replace this use of System.out or System.err by a logger.(™Î€‹
+O	java:S106³"9Replace this use of System.out or System.err by a logger.(şÁÔ‡
+T	java:S106µ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106¸"9Replace this use of System.out or System.err by a logger.(‚¦·m
+T	java:S106º"9Replace this use of System.out or System.err by a logger.(îìÜ•ùÿÿÿÿ
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(ª„íìøÿÿÿÿ
+T	java:S106Ö"9Replace this use of System.out or System.err by a logger.(áŠßÙÿÿÿÿÿ
+T	java:S106Ş"9Replace this use of System.out or System.err by a logger.(ä·šòıÿÿÿÿ
+O	java:S106å"9Replace this use of System.out or System.err by a logger.(ú‘–×
+d	java:S100é"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú°ë–
+2
+java:S3626"Remove this redundant jump.(ûÁİ…
+p
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(˜€¢Ş
+N
+java:S1854ß"7Remove this useless assignment to local variable "hay".(ÿ¶Áğ
+i
+java:S3776ä"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ó¨ì¢
+K
+java:S1172±"/Remove this unused method parameter "capacity".(«©®¯ÿÿÿÿÿ
+D	java:S108¸")Either remove or fill this block of code.(¶ğÆëüÿÿÿÿ
+T	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(Ññ÷˜şÿÿÿÿ
+T	java:S106Ò"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T	java:S106Ô"9Replace this use of System.out or System.err by a logger.(¿Ó‘şÿÿÿÿ
+n
+java:S3776Ù"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÍÏ”ıÿÿÿÿ
+i	java:S100ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×É‹‚øÿÿÿÿ
+u
+java:S2293ı"YReplace the type specification in this constructor call with the diamond operator ("<>").(À—Å»şÿÿÿÿ
+c	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ëÍ_
+O	java:S106ª"9Replace this use of System.out or System.err by a logger.(‚¨Ö§
+i	java:S100¯"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÚŠ¿øÿÿÿÿ
+d	java:S100·"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú€å
+d	java:S100Å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒÀï
+?
+java:S1172Å"(Remove this unused method parameter "n".(ŒÀï
+P
+java:S3400Æ"9Remove this method and declare a constant for this value.(”·³›
+d	java:S100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌË†ˆ
+C
+java:S1172Ü",Remove this unused method parameter "array".(êÓí’
+L
+java:S1854İ"5Remove this useless assignment to local variable "a".(·Ú›“
+p
+java:S2293İ"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Ú›“
+d	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç¿¬ı
+O	java:S106ø"9Replace this use of System.out or System.err by a logger.(Ô·ê
+N	java:S106ı"9Replace this use of System.out or System.err by a logger.(ÜÄ™g
+X
+java:S1126ş"AReplace this if-then-else statement by a single return statement.(Ç¶ÌÕ
+Q
+java:S1854‡"5Remove this useless assignment to local variable "i".(¨Á Şÿÿÿÿÿ
+T	java:S106†"9Replace this use of System.out or System.err by a logger.(±éÂÒùÿÿÿÿ
+V
+java:S2123‡":Remove this increment or correct the code not to waste it.(¨Á Şÿÿÿÿÿ
+Q
+java:S1854":Remove this useless assignment to local variable "split1".(ŞÄÍÃ
+T
+java:S1854”"8Remove this useless assignment to local variable "tree".(Öûã©øÿÿÿÿ
+O	java:S106Î"9Replace this use of System.out or System.err by a logger.(²¬‡ò
+T	java:S106Ô"9Replace this use of System.out or System.err by a logger.(€€ı·ûÿÿÿÿ
+W
+java:S1854Ù";Remove this useless assignment to local variable "chars_B".(òõ ›üÿÿÿÿ
+U
+java:S2251Ú"9"i" is incremented and will never reach "stop condition".(Îí¨×úÿÿÿÿ
+D	java:S108Ú")Either remove or fill this block of code.(Îí¨×úÿÿÿÿ
+h
+java:S3776ó"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(…ïÇ)
+D
+java:S1172Ş"-Remove this unused method parameter "prices".(Óö‚ª
+P
+java:S3400à"9Remove this method and declare a constant for this value.(”·³›
+i	java:S100ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í¿Ãûÿÿÿÿ
+Q
+java:S1854ü"5Remove this useless assignment to local variable "j".(ùÛâ±ùÿÿÿÿ
+o
+java:S3012ê"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÀàÀ
+P
+java:S1854§"9Remove this useless assignment to local variable "chars".(«òç¯
+T	java:S106¨"9Replace this use of System.out or System.err by a logger.(¤íçıúÿÿÿÿ
+<
+java:S1481"&Remove this unused "i" local variable.(¬†°–
+A
+java:S1481‘"*Remove this unused "chars" local variable.(«òç¯
+C
+java:S1481¿",Remove this unused "integer" local variable.(áÈ³º
+?
+java:S1481ß"(Remove this unused "hay" local variable.(ÿ¶Áğ
+=
+java:S1481İ"&Remove this unused "a" local variable.(·Ú›“
+E
+java:S1481”")Remove this unused "tree" local variable.(Öûã©øÿÿÿÿ
+D
+java:S1481"(Remove this unused "sun" local variable.(É¹¼Åøÿÿÿÿ
+B
+java:S1481"+Remove this unused "split1" local variable.(ŞÄÍÃ
+H
+java:S1481Ù",Remove this unused "chars_B" local variable.(òõ ›üÿÿÿÿ
+=
+java:S1481ú"&Remove this unused "k" local variable.(¢³¯¯
+=
+java:S1481û"&Remove this unused "i" local variable.(»ŸÜš
+B
+java:S1481ü"&Remove this unused "j" local variable.(ùÛâ±ùÿÿÿÿ
+A
+java:S1481§"*Remove this unused "chars" local variable.(«òç¯
+C
+java:S1068	"(Remove this unused "suns" private field.(ˆ€¸Óúÿÿÿÿ
+Q	java:S125Æ"<This block of commented-out lines of code should be removed.(ò·7
+W	java:S125ì"<This block of commented-out lines of code should be removed.(§œÁØøÿÿÿÿ
