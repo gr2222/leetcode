@@ -3,8 +3,7 @@ import java.util.*;
 
 public class main {
     public static void main(String[] args) {
-        int[] a = {9,6,4,2,3,5,7,0,1};
-        int i = missingNumber(a);
+        testInt();
     }
     private static int suns;
     public static boolean isPalindrome(int x) {
@@ -1012,6 +1011,38 @@ public class main {
         return sun - suns;
     }
 
+    /**
+     *  经过测试finally会改变return的值
+     *
+     */
+    public static int testfinally(){
+        try {
+            int i ;
+            i = 10/0;
+        }catch (Exception e){
+            return 1;
+        }finally {
+            return 2;
+        }
+    }
 
-
+    public static void testInt(){
+        int i = 15;
+        Integer m = 15;
+        Integer n = 15;
+        Integer l = 127;
+        Integer o = 127;
+        Integer q = 128;
+        Integer p = 128;
+        Integer w = -128;
+        Integer e = -128;
+        Integer r = -129;
+        Integer t = -129;
+        System.out.println("当int类型和Integer类型比较时无论大小都可以用'=='（自动拆箱）:"+(n==i));
+        System.out.println("当Integer类型和Integer类型比较时数字小于128可以用'==':"+(m==n));
+        System.out.println("当Integer类型和Integer类型比较时数字小于128可以用'==':"+(l==o));
+        System.out.println("当Integer类型和Integer类型比较时数字大于等于128不可以用'==':"+(q==p));
+        System.out.println("当Integer类型和Integer类型比较时数字大于等于-128可以用'==':"+(w==e));
+        System.out.println("当Integer类型和Integer类型比较时数字小于-128不可以用'==':"+(r==t));
+    }
 }
